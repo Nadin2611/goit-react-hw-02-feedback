@@ -12,10 +12,7 @@ export class App extends Component {
   };
 
   handleFeedback = type => {
-    this.setState(
-      prevState => ({ [type]: prevState[type] + 1 }),
-      () => console.log(this.state)
-    );
+    this.setState(prevState => ({ [type]: prevState[type] + 1 }));
   };
 
   countTotalFeedback = () => {
