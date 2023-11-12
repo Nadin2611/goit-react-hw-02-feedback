@@ -12,10 +12,15 @@ export const GlobalStyle = createGlobalStyle`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
       'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
       'Helvetica Neue', sans-serif;
-    background: ${theme.colors.mainBackground};
-    min-height: 100vh;
-
     font-style: normal;
+    color: #fff;
+    background:  ${theme.colors.dark};
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
   }
 
   h1,
@@ -37,13 +42,16 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    padding: 0;
-    border: none;
+    margin: 5px;
+    padding: 8px 12px;
+    background: none;
+    border: 2px solid;
     font: inherit;
-    color: inherit;
-    background-color: transparent;
+    line-height: 1;
     cursor: pointer;
   }
+
+  
 
   a {
     text-decoration: none;

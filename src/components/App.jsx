@@ -32,6 +32,7 @@ export class App extends Component {
     const total = this.countTotalFeedback();
     return (
       <>
+      
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={['good', 'neutral', 'bad']}
@@ -50,7 +51,7 @@ export class App extends Component {
           </Section>
         ) : (
           <Section title="Statistics">
-            <Notification message="There is no feedback"></Notification>
+            <Notification message="There is no feedback :("></Notification>
           </Section>
         )}
       </>
